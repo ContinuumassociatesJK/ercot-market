@@ -25,7 +25,7 @@ SECRET_KEY = '%f%j16h_sg(n-p8wtu#cc^a#t)-(saml5f)^u&cwx1r_k(xppg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['eegridintel.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['continuum-ercot-market.herokuapp.com','127.0.0.1']
 
 
 # Application definition
