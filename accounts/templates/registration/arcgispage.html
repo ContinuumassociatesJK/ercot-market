@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="shortcut icon"  type = "image/x-icon" />
+    <title>ERCOT-market</title>
+<style>
+    
+body {
+    margin: 0;            /* Reset default margin */
+}
+iframe {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+
+</style>
+
+<!-- https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/e0d123e5f316bef78bfdf5a008837577  
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/35d91262b3c3ec8841b54169588c97f7
+cc273fe9d442850fa18c31c88c823e07  apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3 
+ff6626c69507a6f511cc398998905670  
+ce099d7e208dc921e259b48aadef36c1  
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3  apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3 
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/35d91262b3c3ec8841b54169588c97f7
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+ce099d7e208dc921e259b48aadef36c1  
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3  
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+
+
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/35d91262b3c3ec8841b54169588c97f7
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+ce099d7e208dc921e259b48aadef36c1  apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3 
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3  
+cc273fe9d442850fa18c31c88c823e07  apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exeapps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3 
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3 
+ff6626c69507a6f511cc398998905670  
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/35d91262b3c3ec8841b54169588c97f7
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+ce099d7e208dc921e259b48aadef36c1  
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/4fb319211b2e85cace04e8936100f024  apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3 
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3  
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/35d91262b3c3ec8841b54169588c97f7
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+ce099d7e208dc921e259b48aadef36c1  
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3  apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3 
+cc273fe9d442850fa18c31c88c823e07  c273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3 
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/35d91262b3c3ec8841b54169588c97f7
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+ce099d7e208dc921e259b48aadef36c1  
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3  
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+ff6626c69507a6f511cc398998905670  apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3 
+cc273fe9d442850fa18c31c88c823e07  apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3 
+ff6626c69507a6f511cc398998905670  
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/35d91262b3c3ec8841b54169588c97f7
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+ce099d7e208dc921e259b48aadef36c1  
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3  
+cc273fe9d442850fa18c31c88c823e07  
+ff6626c69507a6f511cc398998905670  
+cc273fe9d442850fa18c31c88c823e07  apps/opsdashboard/4fb319211b2e85cace04e8936100f024  
+66bd00e43ff8b932c14140472c4b8cc6  OOo_2.0.1_Win32Intel_install.exe
+https://Continuum Associates.maps.arcgis.com/apps/opsdashboard/d86c4246f3c0eb516628bf324d6b9a3 
+ff6626c69507a6f511cc398998905670  
+a0e9dfc4ba6421011883ee770e6ca98f413dce1f78bc7495d532c3e0ac804dd6 -->
+
+<iframe src="https://ca-llc.maps.arcgis.com/apps/webappviewer/index.html?id=00351c9b96bb4ecdaa3efb15bba6316e"></iframe>
+
+
+
+</body>
+</html>
